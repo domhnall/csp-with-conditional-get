@@ -1,0 +1,10 @@
+<h1>Widget</h1>
+<dl>
+  <dt>Etag:</dt>
+  <dd><%= @widget.fetch(:etag) %></dd>
+  <dt>Last modified:</dt>
+  <dd><%= @widget.fetch(:last_modified) %></dd>
+</dl>
+<script nonce="<%= content_security_policy_nonce %>">
+  alert("Inline script runs OK");
+</script>
